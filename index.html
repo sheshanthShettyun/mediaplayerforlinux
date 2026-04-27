@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+  <img id="art" />
+
+  <div class="content">
+    <div class="top">
+      <div class="text">
+        <div id="title">Nothing Playing</div>
+        <div id="artist"></div>
+      </div>
+
+      <div class="controls">
+        <button onclick="prev()" class="icon-btn prev-btn" aria-label="Previous">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M11 6v12l-8-6 8-6Z" />
+            <path d="M21 6v12l-8-6 8-6Z" />
+          </svg>
+        </button>
+
+        <button id="play" onclick="toggle()" aria-label="Play or pause">
+          <span id="playIcon">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="play-svg">
+              <path d="M8 5v14l11-7-11-7Z" />
+            </svg>
+          </span>
+        </button>
+
+        <button onclick="next()" class="icon-btn next-btn" aria-label="Next">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13 6v12l8-6-8-6Z" />
+            <path d="M3 6v12l8-6-8-6Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <span id="elapsed">00:00</span>
+      <canvas id="visualizer"></canvas>
+      <span id="duration">00:00</span>
+    </div>
+  </div>
+
+  <div class="progress">
+    <div id="progressFill"></div>
+  </div>
+
+</div>
+
+<script src="./renderer.js"></script>
+</body>
+</html>

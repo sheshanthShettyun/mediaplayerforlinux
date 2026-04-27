@@ -1,0 +1,16 @@
+{
+  "name": "mpmodern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^41.3.0",
+    "node-record-lpcm16": "^1.0.1"
+  }
+}
